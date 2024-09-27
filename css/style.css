@@ -1,4 +1,116 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* Your CSS below here */
+
+/* Fallback background */
+.letter {
+  background-image: url(/img/top-image.png);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.letter {
+  background:
+  radial-gradient(circle, transparent 60%, rgb(51 56 57 / 20%) 96%) no-repeat,
+  url(/img/top-image.png) top no-repeat,
+  url(/img/bottom-image.png) bottom no-repeat;
+
+  background-color: whitesmoke;
+
+  border-top: 1mm;
+  border-bottom: 1mm;
+  border-right: 0;
+  border-left: 0;
+  border-style: solid;
+  border-color: rgb(206, 51, 51);
+
+  padding: 1%;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  background-image: url(/img/logo.png);
+  /* filter: drop-shadow(2px 2px black) */
+  border-radius: 60%;
+  box-shadow: 3px 3px 0px 0px black;
+}
+
+h2 {
+  position: relative;
+  top: 15%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+main {
+  position: relative;
+  top: 13%; 
+}
+
+.letterbody {
+  column-count: 2;
+  column-width: 50%;
+  font-size: .88rem;
+}
+
+.lettersubheader {
+  font-size: .8rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-column: 2;
+  columns: 50% 50%;
+}
+
+.button {
+  grid-column: 2;
+  position: relative;
+  top: 50%;
 }

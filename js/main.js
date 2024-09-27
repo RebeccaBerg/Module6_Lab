@@ -1,18 +1,9 @@
-window.onload = loaded;
 
 /**
- * Simple Function that will be run when the browser is finished loading.
+ * This function opens an alert box with
+ * the value of whatever radio button
+ * is selected as the message.
  */
-function loaded() {
-    // Assign to a variable so we can set a breakpoint in the debugger!
-    const hello = sayHello();
-    console.log(hello);
-}
-
-/**
- * This function returns the string 'hello'
- * @return {string} the string hello
- */
-export function sayHello() {
-    return 'hello';
+function submitClicked() {
+    alert(document.querySelector('input[name="type"]:checked').value);
 }
